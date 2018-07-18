@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>RMP - Revealing Module Pattern</title>
+  
+</head>
+<body>
+  <h1>Create your pizza</h1>
+
+  <div id="pizza-form-view">
+    <form id="pizza-form">
+      <h3>Pizza name:</h3>
+      <input type="text" name="name">
+      <br><br>
+      <input type="checkbox" name="ingredients" data-ingredient="Ham"> Ham
+      <input type="checkbox" name="ingredients" data-ingredient="Pepperoni"> Pepperoni
+      <input type="checkbox" name="ingredients" data-ingredient="Mushrooms"> Mushrooms
+      <br><br>
+      <input type="radio" name="crust" value="Thin" checked> Thin
+      <input type="radio" name="crust" value="Medium"> Medium
+      <input type="radio" name="crust" value="Thick"> Thick
+    </form>
+  </div>
+
+  <br><hr>
+
+  <div id="pizza-preview-view"></div>
+
+  <script src="pizzaPreviewController.js"></script>  
+  <script src="pizzaDataController.js"></script>  
+  <script src="pizzaFormController.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
